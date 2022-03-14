@@ -4,6 +4,7 @@ Convert the C program given below which calculates the Factorial of a number tha
 
 Please Note that the input command in C++ is std::cin. This is a representation of the Keyboard.*/
 
+/*
 #include <stdio.h>
 int main()
 {
@@ -20,4 +21,25 @@ int main()
 
     printf("Factorial of %d is %ld\n", no, fac);  
     return 0;
+}
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int no;
+  int fac;
+  int r;
+
+  cout << "Enter a Number : ";
+  cin >> no;
+
+  fac = 1;
+
+  for ( r = 1 ; r <= no ; r++ ) {
+    fac = fac * r;
+  }
+
+  cout << "Factorial of " << no << " is " << fac;
 }
